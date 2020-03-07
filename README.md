@@ -3,6 +3,7 @@
 ## About
 Angularアプリケーション作成時の雛形です。この雛形は以下の内容がインストールされています。
  - Prettier
+ - TSLintの設定
 
 ## Usage
 
