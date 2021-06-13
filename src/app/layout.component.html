@@ -1,2 +1,9 @@
-<div>{{ itemCount$ | async }}</div>
-<a [routerLink]="['/cart']">カートを見る</a>
+<mat-toolbar color="accent">
+  <span>Store App</span>
+  <span class="example-spacer"></span>
+  <a [routerLink]="['/cart']">
+    <mat-icon color="primary" [matBadge]="itemCount$ | async"
+      >shopping_cart</mat-icon
+    >
+  </a>
+</mat-toolbar>
