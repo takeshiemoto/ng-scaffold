@@ -2,5 +2,6 @@
 <ul>
   <li *ngFor="let product of product$ | async">
     {{ product.id }} {{ product.name }}
+    <button (click)="addCart(product)">カートに追加</button>
   </li>
 </ul>

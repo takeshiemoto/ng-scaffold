@@ -1,0 +1,10 @@
+<h2>Cart</h2>
+<p>現在のアイテム数 {{ itemCount$ | async }}</p>
+<ul>
+  <li *ngFor="let product of items$ | async">
+    {{ product.id }} {{ product.name }}
+    <button (click)="removeItem(product.id)">カートから削除</button>
+  </li>
+</ul>
+
+<a [routerLink]="['/product-list']">商品一覧に戻る</a>

@@ -1,10 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ComponentStore } from '@ngrx/component-store';
-
-interface Product {
-  id: string;
-  name: string;
-}
+import { Product } from './entity';
 
 export interface ProductState {
   products: Product[];
